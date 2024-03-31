@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Age Calculator</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="card">
+		<header>
+			<h1>AGE CALCULATOR</h1>
+		</header>
+  
+
+		<div>
+			<label>Enter your Date of Birth</label>
+   <input id="inputDob"
+   type="date"
+   value="2000-00-00"/>
+		</div>
+		<br/>
+
+		<!-- Take the date from which age is to be calculated -->
+		<div>
+			<label>Current Date</label><br>
+			<input id="cdate" 
+   type="date"
+   value=" " />
+		</div>
+		<br/>
+
+		<button type="button"onclick="getDOB()">Calculate</button>
+		<br/>
+		<div id="currentAge"></div>
+  <div class="output-box">
+   <label>Your Age is </label>
+   <div>
+       <strong id="CurrentAge">0 years 0 Months 0 Days</strong>
+       
+   </div>
+   
+   <label>Your Date of Birth is</label>
+   <div>
+       <strong id="DOB">Monday, January 00, 0000</strong>
+       
+   </div>
+   
+   <table>
+       <thead>
+       <tr>
+           <th colspan="2">You Already Lived</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+           <td>In Years</td>
+           <td><strong id="InYears">0</strong> Years</td>
+       </tr>
+       <tr>
+           <td>In Months</td>
+           <td><strong id="InMonths">0</strong> Months</td>
+       </tr>
+       <tr>
+           <td>In Weeks</td>
+           <td><strong id="InWeeks">0</strong> Weeks</td>
+       </tr>
+       <tr>
+           <td>In Days</td>
+           <td><strong id="InDays">0</strong> Days</td>
+       </tr>
+       <tr>
+           <td>In Hours</td>
+           <td><strong id="InHours">0</strong> Hours</td>
+       </tr>
+       <tr>
+           <td>In Minutes</td>
+           <td><strong id="InMinutes">0</strong> Minutes</td>
+       </tr>
+       <tr>
+           <td>In Seconds</td>
+           <td><strong id="InSeconds">0</strong> Seconds</td>
+       </tr>
+       </tbody>
+   </table>
+   <div>
+       <strong id="DaysLeft">0</strong> Days Left for your Next Birthdays
+   </div>
+   </div>
+  
+		<script src="script.js"></script>
+	</div>
+</body>
+
+</html>
